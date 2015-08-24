@@ -9,7 +9,7 @@
 <body class='<%= controller.controller_name %>'>
 
   <div id="baner">
-    <%= image_tag("logo.png") %>
+    <%= image_tag("logo.jpg") %>
     <%= @page_title || "Pragmatic Bookshelf" %>
   </div>
 
@@ -22,10 +22,10 @@
         <li><a href="">Contact</a></li>
       </ul>
     </div>
+    <div id="main">
+      <%= yield %>
+    </div>
   </div>
 
-  <div id="main">
-    <%= yield %>
-  </div>
 </body>
 </html>
